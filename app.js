@@ -1,0 +1,1 @@
+function save(){let v=document.getElementById("pnl").value;localStorage.setItem("pnl",v);document.getElementById("out").innerText="Uloženo: "+v+" Kč";}if(localStorage.getItem("pnl"))document.getElementById("out").innerText="Poslední P/L: "+localStorage.getItem("pnl")+" Kč";if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js");}
